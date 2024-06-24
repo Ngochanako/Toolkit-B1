@@ -1,0 +1,33 @@
+.b4{
+  border: transparent;
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+  margin-top: 50px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid{
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+.b5{
+  margin-top: 50px;
+  background-color: rgb(24,49,83);
+  max-width: 200px;
+  font-size: 18px;
+}
+.b5-item{
+  display: flex;
+  gap: 20px;
+  color: white;
+  padding: 10px;
+}
