@@ -5,6 +5,8 @@ import ColorReducer from "./reducers/ColorReducer";
 import DisplayReducer from "./reducers/DisplayReducer";
 import Arrowreducer from "./reducers/Arrowreducer";
 import FavoristUserReducer from "./reducers/FavoristUserReducer";
+import RegisterReducer from "./reducers/RegisterReducer";
+import LoginReducer from "./reducers/LoginReducer";
 
 export const store=configureStore({
     reducer:{
@@ -14,5 +16,7 @@ export const store=configureStore({
         display:DisplayReducer,
         arrow:Arrowreducer,
         users:FavoristUserReducer,
+        register:RegisterReducer,
+        login:LoginReducer,
     }
 })

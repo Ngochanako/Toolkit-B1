@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { register } from '../store/reducers/RegisterReducer';
 type User={
     id:number,
     password:string,
@@ -20,10 +21,7 @@ export default function Bai8() {
     const navigate=useNavigate();
     const handleClick=(e:FormEvent)=>{
         e.preventDefault();
-       dispatch({
-        type:'REGISTER',
-        payload:user,
-       })
+       dispatch(register(user))
        navigate('/login');
     }
   return (

@@ -1,3 +1,5 @@
+import { User } from "./User"
+
 export type State={
     count:number,
     listNumber:number[],
@@ -15,6 +17,7 @@ export type State={
         id:number,
         name:string,
         status:boolean,
-    }[]
-
+    }[],
+    register:User,
+    login:User,
 }
